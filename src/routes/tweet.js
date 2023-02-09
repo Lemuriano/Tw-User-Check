@@ -17,7 +17,7 @@ const checkAccountStatus = (req, res) => {
             case 63:
                 return res.json({ status: 'Suspendido' });
             default:
-                return res.json({ message: 'error en la solicitud' });
+                return res.json({ status: 'error en la solicitud' });
         }
     }  
   });
